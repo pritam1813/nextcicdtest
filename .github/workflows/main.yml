@@ -26,6 +26,7 @@ jobs:
   LintTest:
     name: Lint and Test
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Lint check
         run: |
