@@ -36,6 +36,8 @@ jobs:
             ${{ runner.os }}-pnpm-
       - name: Install dependencies
         run: pnpm install
+      - name: Jest Test
+        run: pnpm test
 
   deploy:
     runs-on: ubuntu-latest
